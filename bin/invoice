@@ -1,0 +1,11 @@
+#!/bin/sh
+set -eu
+ROOT=$(CDPATH= cd -- "$(dirname "$0")/.." && pwd)
+CLI="$ROOT/dist/cli.js"
+
+if [ ! -f "$CLI" ]; then
+  echo "Missing build. From $ROOT, run: pnpm install" >&2
+  exit 1
+fi
+
+exec node "$CLI" "$@"

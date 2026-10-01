@@ -1,0 +1,16 @@
+{
+  "profiles": [
+    {
+      "name": "acme-redesign",
+      "hourlyRate": 150,
+      "client": {
+        "name": "Acme Inc",
+        "address": "1 Market St\nSan Francisco, CA"
+      },
+      "contractor": {
+        "name": "Jane Doe",
+        "address": "123 Main St\nAustin, TX"
+      }
+    }
+  ]
+}
